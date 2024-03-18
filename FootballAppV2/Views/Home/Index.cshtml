@@ -1,0 +1,77 @@
+﻿@*@model League*@
+@model List<League>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section scripts{
+<script>
+     $(function() {
+        $('#primerSelect').change(function() {
+            var id = $(this).val();
+            $.ajax({
+                url: '@Url.Action("GetValoresSegundoSelect")',
+                data: { id: id },
+                success: function(data) {
+                    var segundoSelect = $('#segundoSelect');
+                    //segundoSelect.empty();
+                    $.each(data, function(index, value) {
+                        segundoSelect.append($('<option value="'+ value.value +'">'+ value.text + '</option>'));
+                    });
+                }
+            });
+            $("#div-fechas").show();
+        });
+    });
+</script>
+<script>
+     $(function() {
+        $('#segundoSelect').change(function() {
+        var selectedOption1 = $('#primerSelect').val();
+        var matchday = $(this).val();
+         $.ajax({
+                url: '@Url.Action("GetCodeLeague")',
+                data: { id: selectedOption1 },
+                success: function(data) {
+                    var code = data;
+                    window.location.href = 'Home/Fixture?code=' + code + '&matchday=' + matchday;
+                    /*$.ajax({
+                        url: '@Url.Action("Fixture")',
+                        data: { code: code, matchday: matchday},
+                    });*/
+                }
+            });
+        });
+    });
+</script>
+}
+
+<!--div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>@ViewBag.Message</h1>
+    <h1>@ViewBag.Clave</h1>
+</div-->
+
+   
+<!--h1>@*@Model.Lname*@</h1-->
+<div class="container-fluid">
+<h1>CONSULTA EL FIXTURE DE TU LIGA FAVORITA</h1>
+<h2>Liga</h2>
+<select  class="form-select" id="primerSelect" name="primerSelect">
+   <option disabled selected value="">--Seleccionar Liga--</option>  
+   @foreach (League league in Model)
+    {
+        <option value="@league.Lid">@league.Lname</option>    
+    }
+</select>
+</div>
+
+<div class="container-fluid" id="div-fechas" style="display:none;">
+<h2>Fecha</h2>
+<select  class="form-select" id="segundoSelect" name="segundoSelect">
+<option disabled selected value="">--Seleccionar Fecha--</option>    
+</select>
+</div>
+

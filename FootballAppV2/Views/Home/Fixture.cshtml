@@ -1,0 +1,33 @@
+﻿@model Fixture
+
+<div class="container-fluid">
+    <h1>Fecha: @Model.matchDay</h1>
+    <h1>Temporada: @Model.season</h1>
+</div>
+
+<table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Local</th>
+                <th></th>
+                <th>Visitante</th>
+                <th></th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var match in Model.matches)
+            {
+                <tr>
+                    <td>@match.homeTeam</td>
+                    <td>@match.scoreHome</td>
+                    <td>@match.awayTeam</td>
+                    <td>@match.scoreAway</td>
+                    <td>@match.date.ToShortDateString() @match.date.ToShortTimeString()</td>
+                </tr>
+            }
+        </tbody>
+ </table>
+ <div class="container-fluid">
+<a asp-controller="Home" asp-action="Index" class="btn btn-outline-success">Volver</a>
+</div>
