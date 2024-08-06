@@ -1,5 +1,4 @@
-﻿@*@model League*@
-@model List<League>
+﻿@model List<League>
 
 @{
     ViewData["Title"] = "Home Page";
@@ -15,7 +14,6 @@
                 data: { id: id },
                 success: function(data) {
                     var segundoSelect = $('#segundoSelect');
-                    //segundoSelect.empty();
                     $.each(data, function(index, value) {
                         segundoSelect.append($('<option value="'+ value.value +'">'+ value.text + '</option>'));
                     });
@@ -36,10 +34,7 @@
                 success: function(data) {
                     var code = data;
                     window.location.href = 'Home/Fixture?code=' + code + '&matchday=' + matchday;
-                    /*$.ajax({
-                        url: '@Url.Action("Fixture")',
-                        data: { code: code, matchday: matchday},
-                    });*/
+                 
                 }
             });
         });
@@ -47,15 +42,6 @@
 </script>
 }
 
-<!--div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <h1>@ViewBag.Message</h1>
-    <h1>@ViewBag.Clave</h1>
-</div-->
-
-   
-<!--h1>@*@Model.Lname*@</h1-->
 <div class="container-fluid">
 <h1>CONSULTA EL FIXTURE DE TU LIGA FAVORITA</h1>
 <h2>Liga</h2>
