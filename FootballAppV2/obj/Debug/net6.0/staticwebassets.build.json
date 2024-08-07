@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ITTchlsPCqKc/kzky81rNdwJ2cZfa6GESnKKY+AZp+0=",
+  "Hash": "hpURpKHWo7zPF5Df8IrnmiMbZn1ofwoPql4t56LsPvk=",
   "Source": "FootballAppV2",
   "BasePath": "_content/FootballAppV2",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Practica_CSharp\\FootballAppV2\\FootballAppV2\\wwwroot\\js\\Home.js",
+      "SourceId": "FootballAppV2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Practica_CSharp\\FootballAppV2\\FootballAppV2\\wwwroot\\",
+      "BasePath": "_content/FootballAppV2",
+      "RelativePath": "js/Home.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Home.js"
     },
     {
       "Identity": "D:\\Practica_CSharp\\FootballAppV2\\FootballAppV2\\wwwroot\\js\\site.js",

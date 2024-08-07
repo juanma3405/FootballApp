@@ -64,7 +64,7 @@ namespace FootballAppV2.Controllers
                 return RedirectToAction("Index");
             }
             Fixture myMatchday = await _servicioAPI.GetMatchDay(code, matchday);
-            if (myMatchday.matches.Count == 0)
+            if (myMatchday.matches == null || myMatchday.matches.Count == 0  )
             {
                 return View("FixtureError");
             }
