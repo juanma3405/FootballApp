@@ -22,22 +22,16 @@ namespace FootballAppV2.Controllers
             _servicioAPI = servicioAPI;
         }
 
-        public IActionResult Index()
+        public async Task<ActionResult<List<League>>> Index()
         {
-            /*ViewBag.Message = "Mensaje con ViewBag";
-            ViewBag.Clave = "Mi clave";*/
-            //List<League> leagues = _admLeague.getLeagueList();
-
-            /*League league = _admLeague.getLeague(1);
-            return View(league);*/
-            List<League> leagues = _admLeague.getLeagueList();
+            List<League> leagues = await _admLeague.GetLeagueList();
             return View(leagues);
         }
 
-        public IActionResult GetValoresSegundoSelect(int id)
+        public async Task<ActionResult<string>> GetValoresSegundoSelect(int id)
         {
             List<SelectListItem> valoresSegundoSelect = new List<SelectListItem>();
-            Matchdays matchdays = _admMatchdays.getMatchdays(id);
+            Matchdays matchdays = await _admMatchdays.GetMatchdays(id);
             int matchdaysLeague = Convert.ToInt32(matchdays.Mmatchdays);
             int value = 1;
             string fecha = "Fecha ";
@@ -49,9 +43,9 @@ namespace FootballAppV2.Controllers
             return Json(valoresSegundoSelect);
         }
 
-        public IActionResult GetCodeLeague (int id) 
-        { 
-            string code = _admLeague.getLeagueCode(id);
+        public async Task<ActionResult<string>> GetCodeLeague(int id)
+        {
+            string code = await _admLeague.GetLeagueCode(id);
             return Json(code);
         }
 

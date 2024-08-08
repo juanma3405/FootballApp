@@ -8,9 +8,9 @@
         {
             this.contexto = contexto;
         }
-        public Matchdays getMatchdays(int id)
+        public async Task<Matchdays> GetMatchdays(int id)
         {
-            return contexto.Matchdays.Find(id);
+            return await contexto.Matchdays.FindAsync(id);
         }
 
     }

@@ -1,28 +1,31 @@
-﻿namespace FootballAppV2.Models
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace FootballAppV2.Models
 {
     public class AdmLeague : IAdmLeague
     {
         private readonly AppDbContext contexto;
-        private List<League> leagueList;
 
         public AdmLeague(AppDbContext contexto)
         {
             this.contexto = contexto;
         }
-        public League getLeague(int id)
+        public async Task<League> GetLeague(int id)
         {
-            return contexto.League.Find(id);
+            var league = await contexto.League.FindAsync(id);
+            return league;  
         }
 
-        public string getLeagueCode(int id)
+        public async Task<string> GetLeagueCode(int id)
         {
-            return contexto.League.Find(id).Lcode;
+            var league = await contexto.League.FindAsync(id);
+            return league?.Lcode;
         }
 
-        public List<League> getLeagueList()
+        public async Task<List<League>> GetLeagueList()
         {
-            leagueList = contexto.League.ToList<League>();
-            return leagueList;
+            return await contexto.League.ToListAsync();
         }
 
         

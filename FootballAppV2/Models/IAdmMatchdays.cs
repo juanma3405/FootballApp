@@ -2,6 +2,6 @@
 {
     public interface IAdmMatchdays
     {
-        Matchdays getMatchdays(int id);
+        Task<Matchdays> GetMatchdays(int id);
     }
 }
