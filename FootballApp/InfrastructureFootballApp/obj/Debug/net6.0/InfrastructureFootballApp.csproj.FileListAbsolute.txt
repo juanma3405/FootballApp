@@ -1,0 +1,17 @@
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\bin\Debug\net6.0\InfrastructureFootballApp.deps.json
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\bin\Debug\net6.0\InfrastructureFootballApp.runtimeconfig.json
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\bin\Debug\net6.0\InfrastructureFootballApp.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\bin\Debug\net6.0\InfrastructureFootballApp.pdb
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\bin\Debug\net6.0\BusinessLogicFootballApp.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\bin\Debug\net6.0\BusinessLogicFootballApp.pdb
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.csproj.AssemblyReference.cache
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.AssemblyInfoInputs.cache
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.AssemblyInfo.cs
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.csproj.CoreCompileInputs.cache
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.csproj.CopyComplete
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\refint\InfrastructureFootballApp.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.pdb
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\InfrastructureFootballApp.genruntimeconfig.cache
+D:\Practica_CSharp\FootballAppV2\FootballApp\InfrastructureFootballApp\obj\Debug\net6.0\ref\InfrastructureFootballApp.dll

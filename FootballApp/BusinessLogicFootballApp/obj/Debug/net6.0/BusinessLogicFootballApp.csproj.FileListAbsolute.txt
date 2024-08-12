@@ -1,0 +1,12 @@
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\BusinessLogicFootballApp.csproj.AssemblyReference.cache
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\BusinessLogicFootballApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\BusinessLogicFootballApp.AssemblyInfoInputs.cache
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\BusinessLogicFootballApp.AssemblyInfo.cs
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\BusinessLogicFootballApp.csproj.CoreCompileInputs.cache
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\bin\Debug\net6.0\BusinessLogicFootballApp.deps.json
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\bin\Debug\net6.0\BusinessLogicFootballApp.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\bin\Debug\net6.0\BusinessLogicFootballApp.pdb
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\BusinessLogicFootballApp.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\refint\BusinessLogicFootballApp.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\BusinessLogicFootballApp.pdb
+D:\Practica_CSharp\FootballAppV2\FootballApp\BusinessLogicFootballApp\obj\Debug\net6.0\ref\BusinessLogicFootballApp.dll

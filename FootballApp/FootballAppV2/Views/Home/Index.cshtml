@@ -1,0 +1,37 @@
+﻿@model List<League>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section scripts{
+    <script src="~/js/Home.js"></script>
+    <script>
+        var getValoresSegundoSelectUrl = '@Url.Action("GetNumberMatchDays")';
+        var getCodeLeagueUrl = '@Url.Action("GetCodeLeague")';
+    </script>
+}
+
+<div class="container-fluid">
+    <h1>CONSULTA EL FIXTURE DE TU LIGA FAVORITA</h1>
+    <h2>Liga</h2>
+    <select  class="form-select" id="primerSelect" name="primerSelect">
+       <option disabled selected value="">--Seleccionar Liga--</option>  
+       @foreach (League league in Model)
+        {
+            <option value="@league.Lid">@league.Lname</option>    
+        }
+    </select>
+    </div>
+
+    <div class="container-fluid" id="div-fechas" style="display:none;">
+    <h2>Fecha</h2>
+    <select  class="form-select" id="segundoSelect" name="segundoSelect">
+    <option disabled selected value="">--Seleccionar Fecha--</option>    
+    </select>
+
+    <div id="loadingMessage" style="display:none;" class="loading-overlay">
+        <div class="loading-content">Cargando su fixture...</div>
+    </div>
+</div>
+
