@@ -899,3 +899,10 @@ D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\Busi
 D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\BusinessLogicFootballApp.pdb
 D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\InfrastructureFootballApp.dll
 D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\InfrastructureFootballApp.pdb
+D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\System.Web.Mvc.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\System.Web.Razor.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\System.Web.Helpers.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\System.Web.WebPages.dll
+D:\Practica_CSharp\FootballAppV2\FootballApp\FootballAppV2\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

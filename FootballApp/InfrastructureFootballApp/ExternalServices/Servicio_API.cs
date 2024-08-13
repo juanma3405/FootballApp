@@ -1,11 +1,16 @@
 ﻿using BusinessLogicFootballApp.Entities;
 using BusinessLogicFootballApp.Interfaces;
-using Newtonsoft.Json.Linq;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace BusinessLogicFootballApp.Services
+namespace InfrastructureFootballApp.ExternalServices
 {
-    public class Servicio_API:IServicio_API
+    public class Servicio_API : IServicio_API
     {
         private static string _key;
         private static string _value;

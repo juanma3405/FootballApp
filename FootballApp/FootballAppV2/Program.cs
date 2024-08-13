@@ -4,6 +4,7 @@ using BusinessLogicFootballApp.Services;
 using FootballAppV2.Identity;
 using InfrastructureFootballApp;
 using InfrastructureFootballApp.Repository;
+using InfrastructureFootballApp.ExternalServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NLog.Extensions.Logging;
@@ -28,6 +29,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 });
 builder.Services.AddScoped<IAdmLeague, AdmLeague>();
 builder.Services.AddScoped<IAdmMatchdays, AdmMatchdays>();
+builder.Services.AddScoped<ICreateListMatchdays, CreateListMatchdays>();
 builder.Services.AddScoped<IServicio_API, Servicio_API>();
 
 builder.Services.ConfigureApplicationCookie(options => options.LoginPath = "/UserAccount/Login");

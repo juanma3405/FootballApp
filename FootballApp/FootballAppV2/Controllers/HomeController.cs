@@ -13,15 +13,15 @@ namespace FootballAppV2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IAdmLeague _admLeague;
-        private readonly IAdmMatchdays _admMatchdays;
         private readonly IServicio_API _servicioAPI;
+        private readonly ICreateListMatchdays _createListMatchdays;
 
-        public HomeController(ILogger<HomeController> logger, IAdmLeague admLeague, IAdmMatchdays admMatchdays, IServicio_API servicioAPI)
+        public HomeController(ILogger<HomeController> logger, IAdmLeague admLeague,/* IAdmMatchdays admMatchdays,*/ IServicio_API servicioAPI, ICreateListMatchdays createListMatchdays)
         {
             _logger = logger;
             _admLeague = admLeague;
-            _admMatchdays = admMatchdays;
             _servicioAPI = servicioAPI;
+            _createListMatchdays = createListMatchdays;
         }
 
         public async Task<ActionResult<List<League>>> Index()
@@ -45,16 +45,7 @@ namespace FootballAppV2.Controllers
             }
             try
             {
-                List<SelectListItem> valoresSegundoSelect = new List<SelectListItem>();
-                Matchdays matchdays = await _admMatchdays.GetMatchdays(id);
-                int matchdaysLeague = Convert.ToInt32(matchdays.Mmatchdays);
-                int value = 1;
-                string fecha = "Fecha ";
-                while (value <= matchdaysLeague)
-                {
-                    valoresSegundoSelect.Add(new SelectListItem { Value = value.ToString(), Text = fecha + value.ToString() });
-                    value++;
-                }
+                var valoresSegundoSelect = await _createListMatchdays.GetMatchdayList(id);
                 return Json(valoresSegundoSelect);
             }
             catch (Exception ex)
