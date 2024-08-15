@@ -27,6 +27,9 @@ builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequireNonAlphanumeric = false;
 });
+
+builder.Services.AddHttpClient<IServicio_API, Servicio_API>();
+
 builder.Services.AddScoped<IAdmLeague, AdmLeague>();
 builder.Services.AddScoped<IAdmMatchdays, AdmMatchdays>();
 builder.Services.AddScoped<ICreateListMatchdays, CreateListMatchdays>();
